@@ -1,0 +1,14 @@
+{
+    "query": {
+        "measures": [
+            "MachineObsData.avgCropSize"
+        ],
+        "dimensions": [
+            "MachineObsData.machineUseId"
+        ],
+        "timeDimensions": [],
+        "order": {
+            "MachineObsData.avgCropSize": "desc"
+        }
+    }
+}

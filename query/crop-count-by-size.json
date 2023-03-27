@@ -1,0 +1,22 @@
+{
+    "query": {
+        "measures": [
+            "MachineObsData.cropCount"
+        ],
+        "dimensions": [
+            "MachineObsData.cropWidthInCm"
+        ],
+        "order": {
+            "MachineObsData.cropCount": "desc"
+        },
+        "filters": [
+            {
+                "member": "MachineObsData.machineUseId",
+                "operator": "equals",
+                "values": [
+                    "806d934b-b36b-47f7-b2e2-7d84b6083ac7"
+                ]
+            }
+        ]
+    }
+}

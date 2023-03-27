@@ -1,0 +1,36 @@
+{
+    "query": {
+        "measures": [
+            "MachineTelematicsData.avgSpeed"
+        ],
+        "filters": [
+            {
+                "member": "MachineTelematicsData.machineName",
+                "operator": "equals",
+                "values": [
+                    "cultivator-32"
+                ]
+            }
+        ],
+        "order": [
+            [
+                "MachineTelematicsData.ts",
+                "asc"
+            ]
+        ],
+        "dimensions": [
+            "MachineTelematicsData.machineName"
+        ],
+        "timeDimensions": [
+            {
+                "dimension": "MachineTelematicsData.ts",
+                "granularity": "minute",
+                "dateRange": [
+                    "2022-08-19",
+                    "2022-08-19"
+                ]
+            }
+        ]
+    }
+}
+
